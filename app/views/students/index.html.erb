@@ -1,7 +1,6 @@
-<h1>These are some cool students:</h1>
+<h1>Students Index Page</h1>
 
-<ul>
-  <% @students.each do |student| %>
-    <li> <%= student.name %> </li>
-  <% end %>
-</ul>
+<% @students.each do |student|%>
+   <h2> <%= link_to student.name, student_path(student) %> </h2>
+   <p> <%= student.mod %> </p>
+<% end %>

@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_15_130223) do
+ActiveRecord::Schema.define(version: 2020_11_22_175221) do
 
   create_table "ducks", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    t.integer "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
